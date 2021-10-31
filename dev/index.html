@@ -6,28 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,400;0,500;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1802415-5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-1802415-5');
-    </script>
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-
+    <!-- Alert Box -->
+    <div class="container-fluid p-0 mb-0">
+        <div class="alert alert-danger alert-dismissible fade show d-flex align-items-center rounded-0" role="alert">
+            <svg class="flex-shrink-0 me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <div> A simple danger alert—check it out!</div>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DanBailey.net</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus magni, corrupti consequuntur sed culpa porro, accusantium numquam nesciunt provident tenetur voluptates ad quos! Magni quo reprehenderit repudiandae amet minima dolores
+                natus vitae, modi, sunt harum similique recusandae repellendus. Ad reprehenderit nulla, a quo quos debitis suscipit voluptatem in soluta ut sit optio vero cum? Deleniti debitis adipisci sapiente ducimus velit quod optio. Assumenda quas
+                optio, esse quos voluptatum architecto exercitationem, illo eveniet consequuntur ex ducimus vel consequatur labore? A minima ut vel ducimus qui sed recusandae facilis aspernatur placeat at sit quo facere ipsa, quas, aliquid soluta ratione
+                officiis doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis quia commodi sapiente incidunt accusantium repudiandae consequuntur sint culpa voluptatum! Dignissimos maiores doloribus, neque magnam placeat est aliquam minus aliquid
+                facilis accusantium necessitatibus? Hic iure odio fugiat voluptates vero quas, praesentium debitis adipisci reprehenderit animi vel ea odit distinctio quasi placeat sequi quos minima accusantium incidunt sunt velit quisquam dolores! Inventore
+                minima repudiandae molestias porro eaque facere, totam laborum error hic placeat deleniti assumenda quo beatae! Earum dolore molestiae maiores!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat inventore molestias doloremque nihil, est tempora voluptates voluptas porro! Ad incidunt quasi omnis ab quibusdam. Doloremque iste possimus excepturi vitae consequuntur,
+                veritatis dolore, voluptates fugit eum perspiciatis dignissimos consectetur nemo aliquid accusamus delectus. Fugit, explicabo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis quia voluptate eos sed omnis dolores? Quisquam voluptate beatae eligendi quam. Asperiores tempore pariatur ullam debitis atque? Obcaecati autem officiis non illum neque
+                iste nesciunt facilis totam atque enim vero tempore deserunt, eveniet natus? Enim error sequi, voluptatum, et perspiciatis ratione asperiores omnis harum modi dolorem aperiam mollitia eveniet nulla corporis. Perferendis, veniam numquam
+                voluptatum consequuntur culpa, nulla voluptate quam ipsa enim dolorem quisquam laudantium ratione, id facilis?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus magni, corrupti consequuntur sed culpa porro, accusantium numquam nesciunt provident tenetur voluptates ad quos! Magni quo reprehenderit repudiandae amet minima dolores
+                natus vitae, modi, sunt harum similique recusandae repellendus. Ad reprehenderit nulla, a quo quos debitis suscipit voluptatem in soluta ut sit optio vero cum? Deleniti debitis adipisci sapiente ducimus velit quod optio. Assumenda quas
+                optio, esse quos voluptatum architecto exercitationem, illo eveniet consequuntur ex ducimus vel consequatur labore? A minima ut vel ducimus qui sed recusandae facilis aspernatur placeat at sit quo facere ipsa, quas, aliquid soluta ratione
+                officiis doloremque!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit veritatis quia commodi sapiente incidunt accusantium repudiandae consequuntur sint culpa voluptatum! Dignissimos maiores doloribus, neque magnam placeat est aliquam minus aliquid
+                facilis accusantium necessitatibus? Hic iure odio fugiat voluptates vero quas, praesentium debitis adipisci reprehenderit animi vel ea odit distinctio quasi placeat sequi quos minima accusantium incidunt sunt velit quisquam dolores! Inventore
+                minima repudiandae molestias porro eaque facere, totam laborum error hic placeat deleniti assumenda quo beatae! Earum dolore molestiae maiores!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat inventore molestias doloremque nihil, est tempora voluptates voluptas porro! Ad incidunt quasi omnis ab quibusdam. Doloremque iste possimus excepturi vitae consequuntur,
+                veritatis dolore, voluptates fugit eum perspiciatis dignissimos consectetur nemo aliquid accusamus delectus. Fugit, explicabo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis quia voluptate eos sed omnis dolores? Quisquam voluptate beatae eligendi quam. Asperiores tempore pariatur ullam debitis atque? Obcaecati autem officiis non illum neque
+                iste nesciunt facilis totam atque enim vero tempore deserunt, eveniet natus? Enim error sequi, voluptatum, et perspiciatis ratione asperiores omnis harum modi dolorem aperiam mollitia eveniet nulla corporis. Perferendis, veniam numquam
+                voluptatum consequuntur culpa, nulla voluptate quam ipsa enim dolorem quisquam laudantium ratione, id facilis?</p>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
